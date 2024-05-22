@@ -44,4 +44,8 @@ public class Articolo {
     public void setNumeroPezziDisponibili(int numeroPezziDisponibili) {
         this.numeroPezziDisponibili = numeroPezziDisponibili;
     }
+
+    public String toString() {
+        return this.getCodiceArticolo() + " " + this.getDescrizione() + " " + this.getPrezzo();
+    }
 }

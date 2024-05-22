@@ -1,12 +1,14 @@
 package Es3;
 
+import java.util.Date;
+
 public class Cliente {
     private int codiceCliente;
     private String nomeCognome;
     private String email;
-    private String dataIscrizione;
+    private Date dataIscrizione;
 
-    public Cliente(int codiceCliente, String nomeCognome, String email, String dataIscrizione) {
+    public Cliente(int codiceCliente, String nomeCognome, String email, Date dataIscrizione) {
         this.codiceCliente = codiceCliente;
         this.nomeCognome = nomeCognome;
         this.email = email;
@@ -37,11 +39,11 @@ public class Cliente {
         this.email = email;
     }
 
-    public String getDataIscrizione() {
+    public Date getDataIscrizione() {
         return dataIscrizione;
     }
 
-    public void setDataIscrizione(String dataIscrizione) {
+    public void setDataIscrizione(Date dataIscrizione) {
         this.dataIscrizione = dataIscrizione;
     }
 }

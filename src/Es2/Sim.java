@@ -19,9 +19,9 @@ public class Sim {
         System.out.println("Numero di telefono: " + numeroTelefono);
         System.out.println("Credito disponibile: " + creditoDisponibile + " euro");
         System.out.println("Ultime 5 chiamate effettuate: ");
-        for (int i = 0; i < ultimeChiamate.length; i++) {
-            if (ultimeChiamate[i] != null) {
-                System.out.println(ultimeChiamate[i].toString());
+        for (Chiamate chiamate : ultimeChiamate) {
+            if (chiamate != null) {
+                System.out.println(chiamate);
             }
         }
     }
