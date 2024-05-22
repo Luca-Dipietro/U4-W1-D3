@@ -10,6 +10,11 @@ public class Rettangolo {
         this.larghezza = larghezza;
     }
 
+    public static void stampaUnRettangolo(Rettangolo r) {
+        System.out.println("Rettangolo Solitario");
+        r.stampaRettangolo();
+    }
+
     public static void stampaDueRettangoli(Rettangolo r1, Rettangolo r2) {
         System.out.println("Rettangolo 1");
         r1.stampaRettangolo();
@@ -22,11 +27,6 @@ public class Rettangolo {
         System.out.println("Somma dei perimetri dei rettangoli r1 e r2: " + sommaPerimetri);
         System.out.println("Somma delle aree dei rettangolo r1 e r2: " + sommaAree);
 
-    }
-
-    public static void stampaUnRettangolo(Rettangolo r) {
-        System.out.println("Rettangolo Solitario");
-        r.stampaRettangolo();
     }
 
     public double getAltezza() {

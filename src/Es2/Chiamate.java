@@ -2,15 +2,16 @@ package Es2;
 
 public class Chiamate {
     private int durataMinuti;
-    private String numeroChiamato;
+    private int numeroChiamato;
 
-    public Chiamate(int durataMinuti, String numeroChiamato) {
-        this.durataMinuti = durataMinuti;
+    public Chiamate(int numeroChiamato, int durataMinuti) {
         this.numeroChiamato = numeroChiamato;
+        this.durataMinuti = durataMinuti;
+
     }
 
     @Override
     public String toString() {
-        return "Durata: " + durataMinuti + " minuti, Numero chiamato: " + numeroChiamato;
+        return "Numero = " + numeroChiamato + ", Durata = " + durataMinuti;
     }
 }
